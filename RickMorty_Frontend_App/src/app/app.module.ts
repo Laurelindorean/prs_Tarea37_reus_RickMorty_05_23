@@ -8,6 +8,7 @@ import { CharactersComponent } from './characters/characters.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import{HttpClientModule} from '@angular/common/http'
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'characters', component: CharactersComponent },
@@ -21,7 +22,7 @@ const appRoutes: Routes = [
     CharactersComponent,
     AboutComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, RouterModule.forRoot(appRoutes) ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, RouterModule.forRoot(appRoutes), HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

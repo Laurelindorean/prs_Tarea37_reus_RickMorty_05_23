@@ -2,7 +2,26 @@
   <div class="bg-image shadow-2-strong contenedor">
     <br><br><br>
     <h1 style="text-align: center; color: white; font-weight: bold;">{{title}}</h1>
+    <br><br>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col" *ngFor="let character of characters">
+          <div class="card">
+            <img [src]="character.image" class="card-img-top" alt="image">
+            <div class="card-body">
+              <h6>{{character.name}}</h6>
+              <a href="#" class="btn btn-warning">See more</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
 
 </div>
 
